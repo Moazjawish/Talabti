@@ -1,0 +1,53 @@
+.navbar
+{
+    padding: 20px 0;
+}
+
+.navbar-menu{
+    color: #49557e;
+    font-size: 18px;
+}
+
+.navbar button
+{
+    background: transparent;
+    font-size: 16px;
+    color: #49557e;
+    border: 1px solid tomato;
+    padding: 10px 30px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.navbar button:hover
+{
+    background-color: #f8c9c1;
+}
+.active
+{
+    padding-bottom: 2px;
+    border-bottom: 2px solid tomato;
+}
+.navbar li
+{
+    cursor: pointer;
+}
+
+.navbar-search-icon .dot
+{
+    min-width: 10px;
+    min-height: 10px;
+    background-color: tomato;
+    border-radius: 5px;
+    top: -8px;
+    right: -8px;
+}
+.search_icon
+{
+    font-size: 30px;
+}
+.basket_icon
+{
+    font-size: 35px;
+    position: relative;
+}
