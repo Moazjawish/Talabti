@@ -1,6 +1,7 @@
 .food-dispaly
 {
     margin-top: 30px;
+    align-items: center;
 }
 
 .food-dispaly h2
@@ -19,3 +20,19 @@ gap: 30px;
 row-gap: 50px;
 }
 
+.read-more-btn
+{
+    margin-top: 20px;
+    background: tomato;
+    font-size: 16px;
+    color: white;
+    border: 1px solid tomato;
+    padding: 10px 20px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.read-more-btn:hover
+{
+    transform: translateY(-5px);
+}

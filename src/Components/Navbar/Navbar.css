@@ -1,6 +1,23 @@
 .navbar
 {
     padding: 20px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    transition: 0.8s;
+    border-radius: 0 0  10px 10px;
+}
+.activeNav
+{
+    background-color: rgb(226 218 217 / 97%);
+    padding: 20px;
+}
+
+.logo
+{
+    color: tomato;
+    font-size: 40px;
+    font-weight: bold;
 }
 
 .navbar-menu{
@@ -35,12 +52,12 @@
 
 .navbar-search-icon .dot
 {
-    min-width: 10px;
-    min-height: 10px;
+    min-width: 11px;
+    min-height: 11px;
     background-color: tomato;
-    border-radius: 5px;
-    top: -8px;
-    right: -8px;
+    border-radius: 8px;
+    top: -6px;
+    right: -5px;
 }
 .search_icon
 {
@@ -50,4 +67,63 @@
 {
     font-size: 35px;
     position: relative;
+}
+
+@media (max-width : 1050px)
+{
+    .navbar .logo
+    {    
+        width: 140px;
+    }
+    .navbar .navbar-menu
+    {
+        gap: 20px;
+        font-size: 17px;
+    }
+    .navbar-right
+    {
+        gap: 30px;
+    }
+    .navbar-right .icon
+    {
+        width: 22px;
+    }
+    .navbar-right button
+    {
+        padding: 8px 25px;
+    }
+}
+
+@media (max-width : 900px)
+{
+    .navbar .logo
+    {    
+        width: 120px;
+    }
+    .navbar .navbar-menu
+    {
+        gap: 15px;
+        font-size: 16px;
+    }
+    .navbar-right
+    {
+        gap: 20px;
+    }
+    .navbar-right .icon
+    {
+        width: 20px;
+    }
+    .navbar-right button
+    {
+        padding: 7px 20px;
+        font-size: 15px;
+    }
+}
+
+@media (max-width : 750px)
+{
+    .navbar .navbar-menu
+    {
+        display: none;
+    }
 }

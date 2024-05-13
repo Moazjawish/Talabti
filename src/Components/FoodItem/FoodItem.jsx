@@ -8,17 +8,17 @@ import { FaCirclePlus } from "react-icons/fa6";
 import { FaCircleMinus } from "react-icons/fa6";
 import { MdAddShoppingCart } from "react-icons/md";
 
-const FoodItem = ({id ,name ,image ,price ,description ,category}) => {
-    const {cartItmes ,addToCart,removeFromCart} = useContext(StoreContext)
+const FoodItem = ({id ,name ,image ,price ,description }) => {
+    const {cartItems , addToCart , removeFromCart} = useContext(StoreContext)
     return (
-    <div className="food-item">
+        <div className="food-item">
         <div className="food-item-image-container">
             <img className="food-item-image" src={image} alt="" />        
-        {    !cartItmes[id] ? <button className="add" onClick={()=>addToCart(id)}><MdAddShoppingCart/></button> 
+        {    !cartItems[id] ? <button className="add" onClick={()=>addToCart(id)}><MdAddShoppingCart/></button> 
             :  
             <div className="food-item-counter">
                 <button  onClick={()=>removeFromCart(id)}><FaCircleMinus /></button>
-                {cartItmes[id]} 
+                {cartItems[id]} 
                 <button  onClick={()=>addToCart(id)}><FaCirclePlus/></button> 
             </div>
         }
